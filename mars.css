@@ -291,6 +291,54 @@
     background: transparent;
 }
 
+/* Mars Planet */
+.mars-planet-container {
+    width: 100%;
+    max-width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.mars-planet {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #e27b58, #c1440e);
+    box-shadow: 
+        inset -40px -40px 80px rgba(0, 0, 0, 0.5),
+        0 0 50px rgba(194, 68, 14, 0.4),
+        0 0 100px rgba(194, 68, 14, 0.2);
+    position: relative;
+    animation: rotate 60s linear infinite;
+}
+
+.mars-planet::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 30px;
+    height: 30px;
+    background: rgba(139, 69, 19, 0.3);
+    border-radius: 50%;
+    box-shadow: 
+        60px 40px 0 15px rgba(139, 69, 19, 0.2),
+        -20px 80px 0 10px rgba(139, 69, 19, 0.25),
+        100px -20px 0 20px rgba(139, 69, 19, 0.15);
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 /* RESPONSIVE */
 @media screen and (max-width: 1024px) {
     .split-content {
