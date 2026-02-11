@@ -48,13 +48,13 @@ body {
 }
 
 .logo img {
-    height: 28px;
+    height: 32px;
     filter: brightness(0) invert(1);
     transition: height 0.3s ease;
 }
 
 .navbar.scrolled .logo img {
-    height: 24px;
+    height: 28px;
 }
 
 /* DESKTOP NAV LINKS */
@@ -94,18 +94,29 @@ body {
     position: absolute;
     top: 100%;
     left: 50%;
-    transform: translateX(-50%) translateY(-10px);
+    transform: translateX(-50%) translateY(0);
     background-color: rgba(0, 0, 0, 0.95);
     backdrop-filter: blur(10px);
     min-width: 200px;
     padding: 12px 0;
-    margin-top: 8px;
+    margin-top: 0;
     z-index: 1000;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 4px;
+}
+
+/* Add padding area to bridge the gap */
+.dropdown::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: transparent;
 }
 
 .dropdown-content a {
