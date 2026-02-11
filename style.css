@@ -48,13 +48,13 @@ body {
 }
 
 .logo img {
-    height: 32px;
+    height: 40px;
     filter: brightness(0) invert(1);
     transition: height 0.3s ease;
 }
 
 .navbar.scrolled .logo img {
-    height: 28px;
+    height: 35px;
 }
 
 /* DESKTOP NAV LINKS */
