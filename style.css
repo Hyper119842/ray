@@ -48,7 +48,8 @@ body {
 }
 
 .logo img {
-    height: 40px;
+    height: 55px;
+    width : auto;
     filter: brightness(0) invert(1);
     transition: height 0.3s ease;
 }
@@ -483,3 +484,4 @@ body {
         justify-content: center;
     }
 }
+
